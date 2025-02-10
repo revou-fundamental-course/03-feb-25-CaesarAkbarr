@@ -3,25 +3,37 @@ body {
     margin: 0;
     padding: 0;
 }
-#fahrenheit-textarea {
-    width: 100%;
-    min-height: 100px;
-    margin: 0 10px 0 10px;
-}
-#celcius-textarea {
-    width: 100%;
-    min-height: 100px;
-    margin: 0 10px 0 10px;
-}
 #result-textarea {
     width: 100%;
     min-height: 100px;
-    margin: 0 10px 0 10px;
+}
+#fahrenheit-textarea {
+    width: 100%;
+    min-height: 100px;
 }
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    margin-top: 50px;
+    margin: 0 10px 0 10px
+}
+#button>button {
+    width: 100px;
+    height: 30px;
+    font-weight: 600;
+    margin: 20px 10px 5px 10px;
+    cursor: pointer;
+}
+#button {
+    display: flex;
+    flex-direction: row;
+}
+#celcius>input {
+    width: 100%;
+    height: 100px;
+}
+#fahrenheit>input {
+    width: 100%;
+    height: 100px;
 }

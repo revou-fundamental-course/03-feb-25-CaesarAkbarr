@@ -13,20 +13,20 @@
                 untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (ºF).</p>
             <div id="celcius">
                 <p>Celcius(ºC)</p>
-                <textarea id="celcius-textarea"></textarea>
+                <input type="number" id="celcius-input">
             </div>
             <div id="button">
-                <button id="convert-button">Konversi</button>
+                <button id="convert-button" onclick="convertCelciusToFahrenheit()">Konversi</button>
                 <button id="reset-button">Reset</button>
                 <button id="reverse-button">Reverse</button>
             </div>
             <div id="fahrenheit">
                 <p>Fahrenheit (ºF)</p>
-                <textarea id="fahrenheit-textarea"></textarea>
+                <textarea id="fahrenheit-textarea"readonly></textarea>
             </div>
             <div id="result">
                 <p>Cara Kalkulasi: </p>
-                <textarea id="result-textarea"></textarea>
+                <textarea id="result-textarea" readonly></textarea>
             </div>
     </div>
 </body>
