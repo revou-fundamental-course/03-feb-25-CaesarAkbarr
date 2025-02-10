@@ -1,3 +1,15 @@
 body {
-    font-family: helvetica;
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+}
+#fahrenheit-textarea {
+    width: 100%;
+    min-height: 100px;
+    margin: 0 10px 0 10px;
+}
+#celcius-textarea {
+    width: 100%;
+    min-height: 100px;
+    margin: 0 10px 0 10px;
 }
