@@ -4,5 +4,3 @@ function convertCelciusToFahrenheit() {
   const output = document.getElementById("fahrenheit-textarea");
   output.innerHTML = fahrenheit;
 };
-
-
