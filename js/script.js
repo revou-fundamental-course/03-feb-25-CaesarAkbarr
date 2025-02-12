@@ -23,17 +23,17 @@ function reveseClick() {
   if (input.innerHTML == " ") {
     alert("Please enter a number");
   } else {
-    if (celciusLabel.innerHTML == "Celcius(ºC)") {
-      celciusLabel.innerHTML = "Fahrenheit(ºF)";
-      fahrenheitLabel.innerHTML = "Celcius(ºC)";
+    if (celciusLabel.innerHTML == "Celcius (ºC)") {
+      celciusLabel.innerHTML = "Fahrenheit (ºF)";
+      fahrenheitLabel.innerHTML = "Celcius (ºC)";
       let fahrenheitValue = toFahrenheit(celciusInput.value);
       fahrenheitTextarea.value = celciusInput.value;
       celciusInput.value = fahrenheitValue;
       resultArea.value ="(" + input + "℉ - 32) * (5/9) = " + c + "℃";
       convertClick();
     } else {
-      celciusLabel.innerHTML = "Celcius(ºC)";
-      fahrenheitLabel.innerHTML = "Fahrenheit(ºF)";
+      celciusLabel.innerHTML = "Celcius (ºC)";
+      fahrenheitLabel.innerHTML = "Fahrenheit (ºF)";
       let celciusValue = toCelsius(celciusInput.value);
       fahrenheitTextarea.value = celciusInput.value;
       celciusInput.value = celciusValue;
@@ -56,7 +56,7 @@ function resetClick() {
 function convertClick() {
   if (input.value == "") {
     alert("Please enter a number");
-  } else if (celciusLabel.innerHTML == "Celcius(ºC)") {
+  } else if (celciusLabel.innerHTML == "Celcius (ºC)") {
     let f = toFahrenheit(input.value);
     document.getElementById("fahrenheit-textarea").value = f;
     resultArea.value ="(" + input.value + "℃ * 9/5) + 32 = " + f + "℉";
