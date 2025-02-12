@@ -15,24 +15,27 @@
         <div class="container">
                 <p>Masukkan suhu derajat Celsius (℃) ke kotak dibawah, lalu klik tombol Konversi
                     untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (ºF).</p>
+
                 <!-- Input -->
                 <div class="input">
                     <p id="celcius-name">Celcius(ºC)</p>
                     <input type="number" id="suhu-input" class="data">
                 </div>
                 <!-- End Input -->
+
                 <!-- Button -->
-                <div class="button">
-                    <button id="convert-button" onclick="convertClick()">Konversi</button>
-                    <button id="reset-button" onclick="resetClick()">Reset</button>
-                    <button id="reverse-button" onclick="reveseClick()">Reverse</button>
+                <div class="button-group">
+                    <button class="button" id="convert-button" onclick="convertClick()">Konversi</button>
+                    <button class="button" id="reset-button" onclick="resetClick()">Reset</button>
+                    <button class="button" id="reverse-button" onclick="reveseClick()">Reverse</button>
                 </div>
                 <!--End Button-->
+
+                <!-- Result -->
                 <div class="result">
                     <p id="fahrenheit-name">Fahrenheit (ºF)</p>
-                    <textarea id="fahrenheit-textarea" class="data"readonly></textarea>
+                    <textarea id="fahrenheit-textarea" class="data" readonly></textarea>
                 </div>
-                <!-- Result -->
                 <div class="result">
                     <p>Cara Kalkulasi: </p>
                     <textarea id="result-textarea" class="data" readonly></textarea>
@@ -42,7 +45,8 @@
     </main>
     <!-- Footer -->
     <footer>
-        <p>Made By @Caesar Akbar</p>
+        <p>Made By</p>
+        <a href="https://github.com/revou-fundamental-course/03-feb-25-CaesarAkbarr.git">@Caesar Akbar</a>
     </footer>
     <script src="js/script.js"></script>
 </body>

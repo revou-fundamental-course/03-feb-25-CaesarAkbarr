@@ -20,7 +20,6 @@ function toCelsius(i) {
 
 // Reverse dari Celcius ke Fahrenheit dan sebaliknya
 function reveseClick() {
-
   if (input.innerHTML == " ") {
     alert("Please enter a number");
   } else {
