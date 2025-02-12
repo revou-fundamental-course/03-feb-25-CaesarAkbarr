@@ -32,6 +32,19 @@ header {
     place-content: center;
     resize: none;
 }
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+#info {
+    margin-bottom: 0;
+}
+#formula {
+    margin-bottom: 10px;
+}
 
 /* button design */
 .button {
