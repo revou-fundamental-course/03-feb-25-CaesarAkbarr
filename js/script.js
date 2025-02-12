@@ -1,25 +1,48 @@
+// Data global
 let celciusLabel = document.getElementById("celcius-name");
 let fahrenheitLabel = document.getElementById("fahrenheit-name");
 let celciusInput = document.getElementById("suhu-input");
 let fahrenheitTextarea = document.getElementById("fahrenheit-textarea");
+let resultArea = document.getElementById("result-textarea");
+let input = document.getElementById("suhu-input");
+let f = toFahrenheit(input);
+let c = toCelsius(input);
+
+
+// Perhitungan
+function toFahrenheit(i) {
+  return (i * 9 / 5) + 32;
+}
+function toCelsius(i) {
+  return (i - 32) * 5 / 9;
+}
 
 
 // Reverse dari Celcius ke Fahrenheit dan sebaliknya
 function reveseClick() {
 
-  if (celciusLabel.innerHTML == "Celcius(ºC)") {
-    celciusLabel.innerHTML = "Fahrenheit(ºF)";
-    fahrenheitLabel.innerHTML = "Celcius(ºC)";
-    let fahrenheitValue = toFahrenheit(celciusInput.value);
-    fahrenheitTextarea.value = celciusInput.value;
-    celciusInput.value = fahrenheitValue;
+  if (input.innerHTML == " ") {
+    alert("Please enter a number");
   } else {
-    celciusLabel.innerHTML = "Celcius(ºC)";
-    fahrenheitLabel.innerHTML = "Fahrenheit(ºF)";
-    let celciusValue = toCelsius(celciusInput.value);
-    fahrenheitTextarea.value = celciusInput.value;
-    celciusInput.value = celciusValue;
+    if (celciusLabel.innerHTML == "Celcius(ºC)") {
+      celciusLabel.innerHTML = "Fahrenheit(ºF)";
+      fahrenheitLabel.innerHTML = "Celcius(ºC)";
+      let fahrenheitValue = toFahrenheit(celciusInput.value);
+      fahrenheitTextarea.value = celciusInput.value;
+      celciusInput.value = fahrenheitValue;
+      resultArea.value ="(" + input + "℉ - 32) * (5/9) = " + c + "℃";
+      convertClick();
+    } else {
+      celciusLabel.innerHTML = "Celcius(ºC)";
+      fahrenheitLabel.innerHTML = "Fahrenheit(ºF)";
+      let celciusValue = toCelsius(celciusInput.value);
+      fahrenheitTextarea.value = celciusInput.value;
+      celciusInput.value = celciusValue;
+      resultArea.value ="(" + input + "℃ * 9/5) + 32 = " + f + "℉";
+      convertClick();
+    }
   }
+
 }
 
 // Reset data
@@ -32,25 +55,17 @@ function resetClick() {
 
 // Validasi Input & Konversi
 function convertClick() {
-  let input = document.getElementById("suhu-input").value;
-  if (input == "") {
+  if (input.value == "") {
     alert("Please enter a number");
   } else if (celciusLabel.innerHTML == "Celcius(ºC)") {
-    let f = toFahrenheit(input);
+    let f = toFahrenheit(input.value);
     document.getElementById("fahrenheit-textarea").value = f;
-    document.getElementById("result-textarea").value ="(" + input + "℃ * 9/5) + 32 = " + f + "℉";
+    resultArea.value ="(" + input.value + "℃ * 9/5) + 32 = " + f + "℉";
   } else {
-    let c = toCelsius(input);
+    let c = toCelsius(input.value);
     document.getElementById("fahrenheit-textarea").value = c;
-    document.getElementById("result-textarea").value ="(" + input + "℉ - 32) * (5/9) = " + c + "℃";
+    resultArea.value ="(" + input.value + "℉ - 32) * (5/9) = " + c + "℃";
   }
 }
 
 
-// Perhitungan
-function toFahrenheit(input) {
-  return (input * 9 / 5) + 32;
-}
-function toCelsius(input) {
-  return (input - 32) * 5 / 9;
-}
