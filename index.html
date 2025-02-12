@@ -7,27 +7,39 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-            <p>Masukkan suhu derajat Celsius (℃) ke kotak dibawah, lalu klik tombol Konversi
-                untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (ºF).</p>
-            <div class="input">
-                <p id="celcius-name">Celcius(ºC)</p>
-                <input type="number" id="celcius-input">
+    <header>
+        <h1>Konversi Suhu</h1>
+    </header>
+    <main>
+        <div class="container">
+                <p>Masukkan suhu derajat Celsius (℃) ke kotak dibawah, lalu klik tombol Konversi
+                    untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (ºF).</p>
+                <!-- Input -->
+                <div class="input">
+                    <p id="celcius-name">Celcius(ºC)</p>
+                    <input type="number" id="suhu-input">
+                </div>
+                <!-- End Input -->
+                <!-- Button -->
+                <div class="button">
+                    <button id="convert-button" onclick="convertClick()">Konversi</button>
+                    <button id="reset-button" onclick="resetClick()">Reset</button>
+                    <button id="reverse-button" onclick="reveseClick()">Reverse</button>
+                </div>
+                <!--End Button-->
+                <div class="result">
+                    <p id="fahrenheit-name">Fahrenheit (ºF)</p>
+                    <textarea id="fahrenheit-textarea"readonly></textarea>
+                </div>
+                <div class="result">
+                    <p>Cara Kalkulasi: </p>
+                    <textarea id="result-textarea" readonly></textarea>
+                </div>
             </div>
-            <div class="button">
-                <button id="convert-button" onclick="convertClick()">Konversi</button>
-                <button id="reset-button" onclick="resetClick()">Reset</button>
-                <button id="reverse-button" onclick="reverseClick()">Reverse</button>
-            </div>
-            <div class="result">
-                <p id="fahrenheit-name">Fahrenheit (ºF)</p>
-                <textarea id="fahrenheit-textarea"readonly></textarea>
-            </div>
-            <div class="result">
-                <p>Cara Kalkulasi: </p>
-                <textarea id="result-textarea" readonly></textarea>
-            </div>
-    </div>
+    </main>
+    <footer>
+        <p>Made By @Caesar Akbar</p>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>

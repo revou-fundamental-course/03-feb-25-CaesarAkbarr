@@ -1,35 +1,8 @@
 body {
-    font-family: Helvetica;
-    margin: 0;
-    padding: 0;
-}
-#result-textarea {
-    width: 50%;
-    min-height: 100px;
-}
-#fahrenheit-textarea {
-    width: 50%;
-    min-height: 100px;
+    font-family: helvetica;
 }
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    margin: 0 10px 0 10px
-}
-#button>button {
-    width: 100px;
-    height: 30px;
-    font-weight: 600;
-    margin: 20px 10px 5px 10px;
-    cursor: pointer;
-}
-#button {
-    display: flex;
-    flex-direction: row;
-}
-#celcius-input {
-    width: 50%;
-    height: 100px;
+    background-color: bisque;
+    width: 100%;
+    margin: 5px;
 }
