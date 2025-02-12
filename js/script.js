@@ -29,7 +29,7 @@ function reveseClick() {
       celciusLabel.innerHTML = "Fahrenheit (ºF)";
       fahrenheitLabel.innerHTML = "Celcius (ºC)";
       info.innerHTML = "Fahrenheit to Celcius";
-      formula.innerHTML = "S(ºF) =(S(ºC) × 9/5) + 32";
+      formula.innerHTML = "S(ºC) =(S(ºF) - 32) * (5/9)";
       let fahrenheitValue = toFahrenheit(celciusInput.value);
       fahrenheitTextarea.value = celciusInput.value;
       celciusInput.value = fahrenheitValue;
@@ -39,7 +39,7 @@ function reveseClick() {
       celciusLabel.innerHTML = "Celcius (ºC)";
       fahrenheitLabel.innerHTML = "Fahrenheit (ºF)";
       info.innerHTML = "Celcius to Fahrenheit";
-      formula.innerHTML = "S(ºC) =(S(ºF) - 32) * (5/9)";
+      formula.innerHTML = "S(ºF) =(S(ºC) × 9/5) + 32";
       let celciusValue = toCelsius(celciusInput.value);
       fahrenheitTextarea.value = celciusInput.value;
       celciusInput.value = celciusValue;
