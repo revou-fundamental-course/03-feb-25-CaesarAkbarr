@@ -5,29 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator Suhu</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
 </head>
 <body>
     <div class="container">
             <p>Masukkan suhu derajat Celsius (℃) ke kotak dibawah, lalu klik tombol Konversi
                 untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (ºF).</p>
-            <div id="celcius">
-                <p>Celcius(ºC)</p>
+            <div class="input">
+                <p id="celcius-name">Celcius(ºC)</p>
                 <input type="number" id="celcius-input">
             </div>
-            <div id="button">
-                <button id="convert-button" onclick="convertCelciusToFahrenheit()">Konversi</button>
-                <button id="reset-button">Reset</button>
-                <button id="reverse-button">Reverse</button>
+            <div class="button">
+                <button id="convert-button" onclick="convertClick()">Konversi</button>
+                <button id="reset-button" onclick="resetClick()">Reset</button>
+                <button id="reverse-button" onclick="reverseClick()">Reverse</button>
             </div>
-            <div id="fahrenheit">
-                <p>Fahrenheit (ºF)</p>
+            <div class="result">
+                <p id="fahrenheit-name">Fahrenheit (ºF)</p>
                 <textarea id="fahrenheit-textarea"readonly></textarea>
             </div>
-            <div id="result">
+            <div class="result">
                 <p>Cara Kalkulasi: </p>
                 <textarea id="result-textarea" readonly></textarea>
             </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -29,7 +29,7 @@ body {
     display: flex;
     flex-direction: row;
 }
-#celcius>input {
+#celcius-input {
     width: 50%;
     height: 100px;
 }
